@@ -95,4 +95,36 @@ h2 {
 img {
   align-self: flex-end;
   margin-top: 33px;
+}
+
+@media (min-width: 1000px) {
+  .container {
+    min-width: 100vw;
+    height: 100vh;
+  }
+
+  h1 {
+    margin-bottom: 16px;
+  }
+
+  span:nth-of-type(1) {
+    font-size: 36px;
+  }
+
+  span:nth-of-type(2) {
+    font-size: 36px;
+  }
+
+  .title-content {
+    width: 540px;
+    margin: auto;
+  }
+
+  .card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 64px;
+  }
 }/*# sourceMappingURL=styles.css.map */
