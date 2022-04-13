@@ -64,22 +64,22 @@ h1 {
     margin-top: 2rem;
 }
 
-.card:nth-of-type(1) {
-    border-top: 4px solid $color-cyan;
+.card-supervisor {
     margin-bottom: 25px;
+    border-top: 4px solid $color-cyan;
 }
 
-.card:nth-of-type(2) {
+.card-team {
     margin-bottom: 25px;
     border-top: 4px solid $color-red;
 }
 
-.card:nth-of-type(3) {
+.card-karma {
     margin-bottom: 25px;
     border-top: 4px solid $color-orange;
 }
 
-.card:nth-of-type(4) {
+.card-calculator {
     border-top: 4px solid $color-blue;
 }
 
@@ -101,20 +101,17 @@ img {
 }
 
 // Layouts
-@media (min-width: 1000px) {
+@media (min-width: 1250px) {
+
     .container {
         min-width: 100vw;
-        height: 100vh;
     }
 
     h1 {
         margin-bottom: 16px;
     }
 
-    span:nth-of-type(1) {
-        font-size: 36px;
-    }
-
+    span:nth-of-type(1),
     span:nth-of-type(2) {
         font-size: 36px;
     }
@@ -125,7 +122,25 @@ img {
     }
 
     .card-container {
-        @include flex-center(row); //adjust?
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
         margin-top: 64px;
+        width: 1110px;
+    }
+
+    .card {
+        margin: 0;
+        width: 350px;
+    }
+
+    .middle-cards {
+        margin: 0 30px;
+    }
+
+    .card-karma {
+        margin-top: 30px;
     }
 }
